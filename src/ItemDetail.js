@@ -1,30 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import MiComponente from "./ItemCount";
+const ItemDetail = ({product}) => {
 
-const ItemDetail = ({detail}) => {
-
-
-    return(
-        <div key="id" class="row ">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img  src=""  alt=""></img>
-              <span  class="card-title">Titulo</span>
+  
+    return (
+      <div key="id" class="row ">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img  src={product[0].image} alt=""></img>
+                <span  class="card-title">{product[0].title}</span>
+              </div>
+              <div class="card-content">
+                <p >Precio: {product[0].price}</p>
+                <p >{product[0].description}</p> 
+               
+              </div>
+              <div class="card-action">
+                <a href="/Carrito">Comprar</a>
+             
+              </div>
+              
             </div>
-            <div class="card-content">
-              <p >Precio: producto.price</p>
-              <p >producto.description</p> 
-              <p >producto.rating</p> 
-            </div>
-            <div class="card-action">
-              <a href="id">Ver mas</a>
-            </div>
+          
           </div>
+          <MiComponente />
         </div>
-      </div>
-      
-    )
-}
+    );
+  };
+  
 
-
-export default ItemDetail
+export default ItemDetail 

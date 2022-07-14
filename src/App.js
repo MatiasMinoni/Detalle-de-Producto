@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 import ItemListContainer from './ItemListContainer';
 import React from 'react';
 import './App.css';
-import ItemDetailContainer from './itemDetailContainer';
+import ItemDetailsContainer from './itemDetailContainer';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 <>
     <NavBar />
 <ItemListContainer></ItemListContainer>
-<ItemDetailContainer></ItemDetailContainer>
+<ItemDetailsContainer></ItemDetailsContainer>
 
 
 
